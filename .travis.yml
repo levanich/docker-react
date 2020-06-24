@@ -6,5 +6,3 @@ before_install:
     - docker build -t levanich/docker-react -f Dockerfile.dev .
     script:
     - docker run -e CI=true levanich/docker-react npm run test
-
-language: generic 
